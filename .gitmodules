@@ -1,0 +1,174 @@
+[submodule "games/Agaruino"]
+	path = games/Agaruino
+	url = https://github.com/ogbaba/Agaruino.git
+[submodule "games/Artillery"]
+	path = games/Artillery
+	url = https://github.com/Frakasss/Artillery.git
+[submodule "games/B-Rally"]
+	path = games/B-Rally
+	url = https://github.com/scmar/B-Rally.git
+[submodule "games/Blob-Attack"]
+	path = games/Blob-Attack
+	url = https://github.com/LudumDareDevelopment/Blob-Attack.git
+[submodule "games/BlocksBuino"]
+	path = games/BlocksBuino
+	url = https://github.com/frthery/BlocksBuino.git
+[submodule "games/Bomber"]
+	path = games/Bomber
+	url = https://github.com/Clement83/Bomber.git
+[submodule "games/CRAZYCAR-Gamebuino"]
+	path = games/CRAZYCAR-Gamebuino
+	url = https://github.com/baptistepouget/CRAZYCAR-Gamebuino.git
+[submodule "games/CastleDefence"]
+	path = games/CastleDefence
+	url = https://github.com/kh9282/CastleDefence.git
+[submodule "games/Copter"]
+	path = games/Copter
+	url = https://github.com/Clement83/Copter.git
+[submodule "games/CopterStrike"]
+	path = games/CopterStrike
+	url = https://github.com/Frakasss/CopterStrike.git
+[submodule "games/Crabator"]
+	path = games/Crabator
+	url = https://github.com/Rodot/Crabator.git
+[submodule "games/CrazyTown"]
+	path = games/CrazyTown
+	url = https://github.com/Clement83/CrazyTown.git
+[submodule "games/DescentIntoHeel"]
+	path = games/DescentIntoHeel
+	url = https://github.com/etienne72230/DescentIntoHeel.git
+[submodule "games/Digger"]
+	path = games/Digger
+	url = https://github.com/scmar/Digger.git
+[submodule "games/FlappyBirdo"]
+	path = games/FlappyBirdo
+	url = https://github.com/Forklift5/FlappyBirdo.git
+[submodule "tools/GambiPaint"]
+	path = tools/GambiPaint
+	url = https://github.com/Trist06Git/GambiPaint.git
+[submodule "games/Gamebuino-Catcher"]
+	path = games/Gamebuino-Catcher
+	url = https://github.com/qubist/Gamebuino-Catcher.git
+[submodule "tools/Gamebuino-Classic-Games-Compilation"]
+	path = tools/Gamebuino-Classic-Games-Compilation
+	url = https://github.com/Gamebuino/Gamebuino-Classic-Games-Compilation.git
+[submodule "games/Gamebuino-Minesweeper"]
+	path = games/Gamebuino-Minesweeper
+	url = https://github.com/dirksteindorf/Gamebuino-Minesweeper.git
+[submodule "games/Gamebuino-SuperSpaceShooter"]
+	path = games/Gamebuino-SuperSpaceShooter
+	url = https://github.com/msevilgenius/Gamebuino-SuperSpaceShooter.git
+[submodule "games/Gamebuino-TREX-QUEST"]
+	path = games/Gamebuino-TREX-QUEST
+	url = https://github.com/Awot83/Gamebuino-TREX-QUEST.git
+[submodule "games/Gamebuino-Thunder-Shoot"]
+	path = games/Gamebuino-Thunder-Shoot
+	url = https://github.com/Awot83/Gamebuino-Thunder-Shoot.git
+[submodule "games/GlaciGlaca"]
+	path = games/GlaciGlaca
+	url = https://github.com/Clement83/GlaciGlaca.git
+[submodule "tools/Metalog"]
+	path = tools/Metalog
+	url = https://github.com/ogbaba/Metalog.git
+[submodule "games/Parachute_Gamebuino"]
+	path = games/Parachute_Gamebuino
+	url = https://github.com/jicehel/Parachute_Gamebuino.git
+[submodule "tools/PlayBuino"]
+	path = tools/PlayBuino
+	url = https://github.com/muessigb/PlayBuino.git
+[submodule "games/ShootBuino"]
+	path = games/ShootBuino
+	url = https://github.com/frthery/ShootBuino.git
+[submodule "games/Simonbuino"]
+	path = games/Simonbuino
+	url = https://github.com/Forklift5/Simonbuino.git
+[submodule "games/Smash-and-Crash"]
+	path = games/Smash-and-Crash
+	url = https://github.com/Skyrunner65/Smash-and-Crash.git
+[submodule "games/SnakeAbcBuino"]
+	path = games/SnakeAbcBuino
+	url = https://github.com/frthery/SnakeAbcBuino.git
+[submodule "games/StickFighter"]
+	path = games/StickFighter
+	url = https://github.com/Clement83/StickFighter.git
+[submodule "games/Super-Crate-Buino"]
+	path = games/Super-Crate-Buino
+	url = https://github.com/Rodot/Super-Crate-Buino.git
+[submodule "games/Tron"]
+	path = games/Tron
+	url = https://github.com/Clement83/Tron.git
+[submodule "games/UFO-Race"]
+	path = games/UFO-Race
+	url = https://github.com/Rodot/UFO-Race.git
+[submodule "games/Worlds-Hardest-Game-Gamebuino"]
+	path = games/Worlds-Hardest-Game-Gamebuino
+	url = https://github.com/Sorunome/Worlds-Hardest-Game-Gamebuino.git
+[submodule "games/ZombiEscape"]
+	path = games/ZombiEscape
+	url = https://github.com/Frakasss/ZombiEscape.git
+[submodule "games/armageddon"]
+	path = games/armageddon
+	url = https://github.com/wuuff/armageddon.git
+[submodule "games/blockdude-gamebuino"]
+	path = games/blockdude-gamebuino
+	url = https://github.com/Sorunome/blockdude-gamebuino.git
+[submodule "games/conduit"]
+	path = games/conduit
+	url = https://github.com/adekto/conduit.git
+[submodule "games/cruiser"]
+	path = games/cruiser
+	url = https://github.com/specht/cruiser.git
+[submodule "games/firemen"]
+	path = games/firemen
+	url = https://github.com/Vicking69/firemen.git
+[submodule "games/gamebuino-bangbang"]
+	path = games/gamebuino-bangbang
+	url = https://github.com/RackhamLeNoir/gamebuino-bangbang.git
+[submodule "games/gamebuino-jezzball"]
+	path = games/gamebuino-jezzball
+	url = https://github.com/RackhamLeNoir/gamebuino-jezzball.git
+[submodule "games/gamebuino-maze"]
+	path = games/gamebuino-maze
+	url = https://github.com/aoneill01/gamebuino-maze.git
+[submodule "games/gamebuino-punkt"]
+	path = games/gamebuino-punkt
+	url = https://github.com/aoneill01/gamebuino-punkt.git
+[submodule "games/gamebuino-solitaire"]
+	path = games/gamebuino-solitaire
+	url = https://github.com/aoneill01/gamebuino-solitaire.git
+[submodule "games/gamebuino-taquin"]
+	path = games/gamebuino-taquin
+	url = https://github.com/RackhamLeNoir/gamebuino-taquin.git
+[submodule "games/gruniozerca-gamebuino"]
+	path = games/gruniozerca-gamebuino
+	url = https://github.com/arhneu/gruniozerca-gamebuino.git
+[submodule "games/makerbuino-firebuino"]
+	path = games/makerbuino-firebuino
+	url = https://github.com/ladbsoft/makerbuino-firebuino.git
+[submodule "games/microhexagon"]
+	path = games/microhexagon
+	url = https://bitbucket.org/valdenthoranar/microhexagon.git
+[submodule "games/shipwrek"]
+	path = games/shipwrek
+	url = https://github.com/yawn-g/shipwrek.git
+[submodule "games/skibuino"]
+	path = games/skibuino
+	url = https://github.com/delpozzo/skibuino.git
+[submodule "games/snake-gamebuino-classic"]
+	path = games/snake-gamebuino-classic
+	url = https://github.com/Tnxec2/snake-gamebuino-classic.git
+[submodule "games/tetrino"]
+	path = games/tetrino
+	url = https://github.com/j0ff/tetrino.git
+[submodule "games/videopoker-gamebuino"]
+	path = games/videopoker-gamebuino
+	url = https://github.com/delpozzo/videopoker-gamebuino.git
+[submodule "games/Gamebuino-Classic"]
+	path = games/Gamebuino-Classic
+	url = https://github.com/Gamebuino/Gamebuino-Classic.git
+[submodule "games/Gamebuino-Shufflepuck_cafe"]
+	path = games/Gamebuino-Shufflepuck_cafe
+	url = https://github.com/Awot83/Gamebuino-Shufflepuck_cafe.git
+[submodule "games/Gamebuino-Classic-Snake-5110"]
+	path = games/Gamebuino-Classic-Snake-5110
+	url = https://github.com/makerSquirrel/Gamebuino-Classic-Snake-5110.git
