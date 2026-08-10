@@ -157,22 +157,47 @@ live in [`tools/`](tools/), not `games/`:
 
 ## Games found outside the wiki search
 
-Not listed on the community wiki at all — found later via a broader
-GitHub API search for the `gamebuino classic` keyword/topic (carefully
-checked one by one against `<Gamebuino-Meta.h>`-based projects for the
-newer, unrelated Gamebuino META board, and excluded when they matched
-that instead):
+Not listed on the community wiki at all — found later via broader
+searches (GitHub topic/keyword search for `gamebuino classic`, and
+checking each already-known author's own other repositories for more
+Gamebuino Classic work they never submitted to the wiki). Every
+candidate was checked one by one against `<Gamebuino-Meta.h>`-based
+projects for the newer, unrelated Gamebuino META board, and excluded
+when it matched that instead:
 
 | Game | Author | License | Source |
 |---|---|---|---|
 | Agaruino | ogbaba | GPLv3 | [games/Agaruino](https://github.com/ogbaba/Agaruino) (Submodule - an agar.io-style clone; also has a real, now-dead wiki listing of its own, both search passes independently found it) |
+| Aimbuino | Baptiste Pouget (hosted under ogbaba's account) | GPLv3 | [games/Aimbuino](https://github.com/ogbaba/Aimbuino) (Submodule - "Bsktuino", an aiming/basketball game; a real 2016 school project, "ISN Project 2016, Lorgues", per its own README - explains the shared hosting) |
 | cruiser | specht | None specified | [games/cruiser](https://github.com/specht/cruiser) (Submodule - a genuine 3D shooter, the most structurally unusual find in this archive; ships its own from-scratch reimplementation of the Gamebuino API rather than the real library) |
+| Dark Shmup | Clement83 | None specified | [games/DarkShmup](https://github.com/Clement83/DarkShmup) (Submodule - a real shoot-em-up) |
+| Duel | Clement83 | None specified | [games/Duel](https://github.com/Clement83/Duel) (Submodule - a sword-duel game with genuine two-cartridge `Wire.h` master/slave multiplayer) |
+| Elventure | wuuff | GPLv3 | [games/Elventure](https://github.com/wuuff/elventure-gamebuino) (Submodule - a real, class-based Zelda-like dungeon crawler) |
 | Firemen | Vicking69 | GPLv2 | [games/firemen](https://github.com/Vicking69/firemen) (Submodule) |
+| Footlol | Baptiste Pouget (hosted under ogbaba's account) | GPLv3 | [games/FOOTLOL-Gamebuino](https://github.com/ogbaba/FOOTLOL-Gamebuino) (Submodule - a small football game) |
+| Gamebuino (StijnCaerts) | Stijn Caerts | MIT | [games/StijnCaerts-Gamebuino](https://github.com/StijnCaerts/Gamebuino) (Submodule - bundles a real local 2-player Pong and a Snake; the Snake needs a real external `ivanseidel/LinkedList` Arduino library) |
 | Gamebuino-Classic-Snake-5110 | Lady Awesome & MakerSquirrel | GPLv3 (per the repo's own `LICENSE`) — though the source file's own header comment separately claims CC-BY-SA; a real, unresolved conflict between the two, not resolved here | [games/Gamebuino-Classic-Snake-5110](https://github.com/makerSquirrel/Gamebuino-Classic-Snake-5110) (Submodule - a genuinely different codebase from Snake Classic below, confirmed by direct diff, not a duplicate) |
+| Master Kebab | ogbaba | GPLv3 | [games/MasterKebab](https://github.com/ogbaba/RMKebab) (Submodule - a kebab-shop management game with a real EEPROM save; the author's own README warns "this game may not work on emulators") |
+| MotoCross | Clement83 | None specified | [games/MotoCross](https://github.com/Clement83/motoCross) (Submodule - a racing game) |
+| My RPG | Frakasss | None specified | [games/MyRPG](https://github.com/Frakasss/MyRPG) (Submodule - a small RPG) |
+| No Name Platform Game | Frakasss | None specified | [games/NoNamePlatformGame](https://github.com/Frakasss/NoNamePlatformGame) (Submodule - a real platformer despite the placeholder-looking name) |
 | Parachute | Jicehel | None specified | [games/Parachute_Gamebuino](https://github.com/jicehel/Parachute_Gamebuino) (Submodule - a Game & Watch "Parachute" remake) |
+| Petit Monstre | Clement83 | None specified | [games/PetitMonstre](https://github.com/Clement83/petitMonstre) (Submodule - "Futuromon", a real Pokémon-style monster-catching/battling game) |
+| Pinball | Clement83 | None specified | [games/PinBall](https://github.com/Clement83/pinBall) (Submodule) |
+| Pirates | Clement83 (art by Jerom) | None specified | [games/Pirates](https://github.com/Clement83/Pirates) (Submodule - "SwordsPi", sword-fighting vs. a real AI opponent) |
+| Pong Local Multiplayer | qubist | None specified | [games/Gamebuino-PongLocalMultiplayer](https://github.com/qubist/Gamebuino-PongLocalMultiplayer) (Submodule - a genuine local hot-seat 2-player Pong) |
+| Pong Revisited | yawn-g | None specified | [games/pong-2017](https://github.com/yawn-g/pong-2017) (Submodule - real single-player Pong vs. a ball-tracking AI, plus a power-up/"tricks" system) |
+| Ralph | Clement83 | None specified | [games/Ralph](https://github.com/Clement83/ralph) (Submodule - a Wreck-It-Ralph-themed platformer) |
+| Robot | Frakasss | None specified | [games/Robot](https://github.com/Frakasss/Robot) (Submodule - a real shooting/action game) |
+| Save Princesse | Clement83 | None specified | [games/SavePrincesse](https://github.com/Clement83/SavePrincesse) (Submodule - a tiny knight-vs-monster teaching game) |
 | Skibuino | Mike Del Pozzo | GPLv3 | [games/skibuino](https://github.com/delpozzo/skibuino) (Submodule) |
 | Snake Classic | Ripper121 (original), Tnxec2 (fork) | None specified | [games/snake-gamebuino-classic](https://github.com/Tnxec2/snake-gamebuino-classic) (Submodule - confirmed via source diff to be a direct fork of Ripper121's own, otherwise-unrecoverable, wiki-listed Snake) |
+| Star Honor | wuuff (a port of Wenceslao Villanueva Jr's original Arduboy game) | MIT | [games/StarHonor](https://github.com/wuuff/StarHonor-gamebuino) (Submodule - a roguelike space adventure with a real EEPROM save) |
+| Under the Tower | wuuff | GPLv3 | [games/UnderTheTower](https://github.com/wuuff/under-the-tower) (Submodule - a real turn-based RPG across 10 randomized dungeons) |
 | Video Poker | Mike Del Pozzo | GPLv3 | [games/videopoker-gamebuino](https://github.com/delpozzo/videopoker-gamebuino) (Submodule) |
+
+**28 games found this way**, on top of the 64 real wiki-listed ones
+above.
 
 ## Games we have not found source code for
 

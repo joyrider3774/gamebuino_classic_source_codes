@@ -172,3 +172,63 @@
 [submodule "games/Gamebuino-Classic-Snake-5110"]
 	path = games/Gamebuino-Classic-Snake-5110
 	url = https://github.com/makerSquirrel/Gamebuino-Classic-Snake-5110.git
+[submodule "games/UnderTheTower"]
+	path = games/UnderTheTower
+	url = https://github.com/wuuff/under-the-tower.git
+[submodule "games/StarHonor"]
+	path = games/StarHonor
+	url = https://github.com/wuuff/StarHonor-gamebuino.git
+[submodule "games/Elventure"]
+	path = games/Elventure
+	url = https://github.com/wuuff/elventure-gamebuino.git
+[submodule "games/SavePrincesse"]
+	path = games/SavePrincesse
+	url = https://github.com/Clement83/SavePrincesse.git
+[submodule "games/PetitMonstre"]
+	path = games/PetitMonstre
+	url = https://github.com/Clement83/petitMonstre.git
+[submodule "games/Ralph"]
+	path = games/Ralph
+	url = https://github.com/Clement83/ralph.git
+[submodule "games/MotoCross"]
+	path = games/MotoCross
+	url = https://github.com/Clement83/motoCross.git
+[submodule "games/PinBall"]
+	path = games/PinBall
+	url = https://github.com/Clement83/pinBall.git
+[submodule "games/DarkShmup"]
+	path = games/DarkShmup
+	url = https://github.com/Clement83/DarkShmup.git
+[submodule "games/MasterKebab"]
+	path = games/MasterKebab
+	url = https://github.com/ogbaba/RMKebab.git
+[submodule "games/Duel"]
+	path = games/Duel
+	url = https://github.com/Clement83/Duel.git
+[submodule "games/Pirates"]
+	path = games/Pirates
+	url = https://github.com/Clement83/Pirates.git
+[submodule "games/Aimbuino"]
+	path = games/Aimbuino
+	url = https://github.com/ogbaba/Aimbuino.git
+[submodule "games/FOOTLOL-Gamebuino"]
+	path = games/FOOTLOL-Gamebuino
+	url = https://github.com/ogbaba/FOOTLOL-Gamebuino.git
+[submodule "games/Gamebuino-PongLocalMultiplayer"]
+	path = games/Gamebuino-PongLocalMultiplayer
+	url = https://github.com/qubist/Gamebuino-PongLocalMultiplayer.git
+[submodule "games/MyRPG"]
+	path = games/MyRPG
+	url = https://github.com/Frakasss/MyRPG.git
+[submodule "games/NoNamePlatformGame"]
+	path = games/NoNamePlatformGame
+	url = https://github.com/Frakasss/NoNamePlatformGame.git
+[submodule "games/Robot"]
+	path = games/Robot
+	url = https://github.com/Frakasss/Robot.git
+[submodule "games/StijnCaerts-Gamebuino"]
+	path = games/StijnCaerts-Gamebuino
+	url = https://github.com/StijnCaerts/Gamebuino.git
+[submodule "games/pong-2017"]
+	path = games/pong-2017
+	url = https://github.com/yawn-g/pong-2017.git
