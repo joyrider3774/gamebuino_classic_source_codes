@@ -152,8 +152,31 @@ live in [`tools/`](tools/), not `games/`:
 | GambiPaint | Trist06Git | None specified | [tools/GambiPaint](https://github.com/Trist06Git/GambiPaint) (Submodule - a drawing/paint tool) |
 | Gamebuino Classic Games Compilation | Gamebuino (official) | GPLv3 | [tools/Gamebuino-Classic-Games-Compilation](https://github.com/Gamebuino/Gamebuino-Classic-Games-Compilation) (Submodule - the official SD-card compilation; ships only compiled `.HEX`/`.INF` files, no real source of its own) |
 | Metalog | ogbaba | GPLv3 | [tools/Metalog](https://github.com/ogbaba/Metalog) (Submodule - a logic-circuit simulator) |
-| PlayBuino | muessigb | **All rights reserved — "you are not allowed to reuse the source at all"** | [tools/PlayBuino](https://github.com/muessigb/PlayBuino) (Submodule - a Game & Watch ROM player/converter) |
 | yoda-fxsynth | Yoda Zhang | None specified | [tools/yoda-fxsynth](tools/yoda-fxsynth) (Manual download - a sound-effect synth/editor tool, not a game) |
+
+## More tools found via a fresh author/repo sweep
+
+Same fresh-sweep pass as the games section below — non-game tools,
+demos, and utilities never listed on the wiki, found by re-checking
+already-credited authors' current repo lists and fresh repo/topic
+searches. Kept here rather than dropped, matching this project's own
+"real source deserves preserving regardless of whether it's a game"
+goal — several of these the sibling porting project explicitly passed on
+since it only ports games, not tools:
+
+| Tool | Author | License | Source |
+|---|---|---|---|
+| Gamebuino BEER-CALC | Awot83 | GPLv3 | [tools/Gamebuino-BEER-CALC](https://github.com/Awot83/Gamebuino-BEER-CALC) (Submodule - a beer-brewing calculator) |
+| Gamebuino HIRAGANA Japanese Learning tool | Awot83 | GPLv3 | [tools/Gamebuino-HIRAGANA-Japanese-Learning-tool](https://github.com/Awot83/Gamebuino-HIRAGANA-Japanese-Learning-tool) (Submodule - a Japanese hiragana-reading learning tool) |
+| Gamebuino MusicNote | Awot83 | GPLv3 | [tools/Gamebuino-MusicNote](https://github.com/Awot83/Gamebuino-MusicNote) (Submodule - a music-note learning/ear-training tool) |
+| Gamebuino Thunderbolt Calc | Awot83 | GPLv3 | [tools/Gamebuino-Thunderbolt_Calc](https://github.com/Awot83/Gamebuino-Thunderbolt_Calc) (Submodule - a lightning-strike-distance calculator) |
+| gamebuinoEducation | CalebDueck | Custom "Educational Use License" — **non-commercial use only**, redistribution/mirroring restricted, not a standard OSS license (read the repo's own `LICENSE.md` before reusing anything) | [tools/gamebuinoEducation](https://github.com/CalebDueck/gamebuinoEducation) (Submodule - a genuinely substantial 13-lesson Gamebuino Classic programming course with real working starter/example code per lesson) |
+| HelloGamebuino | SloeComputers (originally AnotherJohnH) | Unlicense | [tools/HelloGamebuino](https://github.com/SloeComputers/HelloGamebuino) (Submodule - a CMake/Makefile-based dev environment for building real Gamebuino Classic `.HEX` binaries from the command line, without the Arduino IDE) |
+| Pyditn's Dice Thrower | pyditn2 | None specified | [tools/Pyditns-Dice-Thrower-Gamebuino](https://github.com/pyditn2/Pyditns-Dice-Thrower-Gamebuino) (Submodule - a real dice-rolling utility) |
+| chip-8-gamebuino | wuuff | GPLv3 | [tools/chip-8-gamebuino](https://github.com/wuuff/chip-8-gamebuino) (Submodule - a real CHIP-8 interpreter for Gamebuino Classic) |
+| sd_map_test | wuuff | None specified | [tools/sd_map_test](https://github.com/wuuff/sd_map_test) (Submodule - an interactive SD-card-streamed scrolling-map tech demo, not a game in its own right) |
+
+**8 more tools found this way.**
 
 ## Games found outside the wiki search
 
@@ -199,6 +222,27 @@ when it matched that instead:
 **28 games found this way**, on top of the 64 real wiki-listed ones
 above.
 
+## More games found via a fresh author/repo sweep
+
+Found by re-checking every already-credited author's *current* full
+GitHub repo list plus fresh repo/topic searches, none listed on the wiki
+at all. Same verification discipline as above — every one confirmed via a
+real `#include <Gamebuino.h>` (not META), a real non-stub gameplay loop,
+and its own real `LICENSE` file read directly:
+
+| Game | Author | License | Source |
+|---|---|---|---|
+| another2048 | grafMakulaDer2te | None specified | [games/another2048](https://github.com/grafMakulaDer2te/another2048) (Submodule - a genuinely different 2048 codebase from the already-archived `Gamebuino2048`; the repo also carries a separate `meta_version` branch for the unrelated META board — the default `main` branch archived here is the real Classic one) |
+| Community RPG | Sorunome | None specified | [games/gamebuino-community-rpg](https://github.com/Sorunome/gamebuino-community-rpg) (Submodule - a genuinely substantial class-based RPG with real EEPROM + SD-card save data) |
+| Dark Tower | Marcus Hutchings | GPLv3 | [games/DarkTower](https://github.com/marcushutchings/DarkTower) (Submodule - a real text-based adventure game, found via the live `gamebuino.com/creations` site rather than the old wiki or GitHub search) |
+| Frogger (MAKERbuino port) | Andy Jackson | None specified | [games/Frogger_MAKERbuino](games/Frogger_MAKERbuino) (Manual extraction - one real subfolder of `andyhighnumber/Attiny-Arduino-Games`, a live but mostly-unrelated ATtiny85 compilation repo; extracted as plain files rather than submoduled whole, same treatment as `BigBlackBox`'s own compilation-repo source) |
+| Gemgem | Tnxec2 | None specified | [games/gemgem-gamebuino](https://github.com/Tnxec2/gemgem-gamebuino) (Submodule - a Bejeweled-style match-3 game with real EEPROM save/pause) |
+| Minesweeper (Tnxec2's fork) | Tnxec2 | None specified | [games/minesw-gameguino](https://github.com/Tnxec2/minesw-gameguino) (Submodule - a real, confirmed fork of the already-archived `dirksteindorf/Gamebuino-Minesweeper` with its own gameplay changes: maximized board size, a medium difficulty, restart-on-loss; a genuinely different codebase state, not a duplicate) |
+| PAK-MAN (MAKERbuino port) | Andy Jackson | None specified | [games/PAK-MAN_MAKERbuino](games/PAK-MAN_MAKERbuino) (Manual extraction - the other real Gamebuino/MAKERbuino subfolder of the same `andyhighnumber/Attiny-Arduino-Games` compilation repo as Frogger above; a Pac-Man clone ported from the AttinyArcade) |
+| Xonix | Tnxec2 | None specified | [games/xonix-gamebuino](https://github.com/Tnxec2/xonix-gamebuino) (Submodule - a real Xonix clone) |
+
+**8 more games found this way.**
+
 ## Games we have not found source code for
 
 Every one of these was a real wiki entry, checked more than once via a
@@ -216,8 +260,8 @@ still-running mirror this project's own search tooling didn't find.
 | Balls | Macgyvers1 (Vincent aro) | Same as THE SHIP |
 | NightDriver | svenofnine | Personal-site zip now 404s; the rest of the site is still live |
 | Stack Challenge | BlackDragon | Resolves to a `copy.com` cloud-storage link — that service shut down in 2016 |
-| Shot Zero | Linky439 | Original host dead; one alternate forum mirror was found but its own download link never actually resolved to a URL |
-| Mandeluino *(not a game — a Mandelbrot-set viewer)* | svenofnine | Personal-site link dead, same as NightDriver |
+| Shot Zero | Linky439 | Original host dead; the one alternate forum mirror's raw HTML (both of its only two Wayback Machine snapshots, plus the live page) all confirm the download link was never actually present, not merely mis-rendered; the wiki's own original shortlink is dead with zero Wayback coverage; the author's later itch.io work never re-released it — every remaining lever now checked, not just re-confirmed |
+| Mandeluino *(not a game — a Mandelbrot-set viewer)* | svenofnine | A real copy was recovered (user-supplied `.7z`), but it contains only a compiled `mandelbuino.hex`/`mandelbuino.INF`, no real source — removed from `tools/` on that basis rather than kept as a binary-only entry |
 
 ## License
 

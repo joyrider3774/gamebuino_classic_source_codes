@@ -46,12 +46,12 @@
 [submodule "tools/GambiPaint"]
 	path = tools/GambiPaint
 	url = https://github.com/Trist06Git/GambiPaint.git
-[submodule "games/Gamebuino-Catcher"]
-	path = games/Gamebuino-Catcher
-	url = https://github.com/qubist/Gamebuino-Catcher.git
 [submodule "tools/Gamebuino-Classic-Games-Compilation"]
 	path = tools/Gamebuino-Classic-Games-Compilation
 	url = https://github.com/Gamebuino/Gamebuino-Classic-Games-Compilation.git
+[submodule "games/Gamebuino-Catcher"]
+	path = games/Gamebuino-Catcher
+	url = https://github.com/qubist/Gamebuino-Catcher.git
 [submodule "games/Gamebuino-Minesweeper"]
 	path = games/Gamebuino-Minesweeper
 	url = https://github.com/dirksteindorf/Gamebuino-Minesweeper.git
@@ -73,9 +73,6 @@
 [submodule "games/Parachute_Gamebuino"]
 	path = games/Parachute_Gamebuino
 	url = https://github.com/jicehel/Parachute_Gamebuino.git
-[submodule "tools/PlayBuino"]
-	path = tools/PlayBuino
-	url = https://github.com/muessigb/PlayBuino.git
 [submodule "games/ShootBuino"]
 	path = games/ShootBuino
 	url = https://github.com/frthery/ShootBuino.git
@@ -232,3 +229,48 @@
 [submodule "games/pong-2017"]
 	path = games/pong-2017
 	url = https://github.com/yawn-g/pong-2017.git
+[submodule "tools/gamebuinoEducation"]
+	path = tools/gamebuinoEducation
+	url = https://github.com/CalebDueck/gamebuinoEducation.git
+[submodule "tools/Pyditns-Dice-Thrower-Gamebuino"]
+	path = tools/Pyditns-Dice-Thrower-Gamebuino
+	url = https://github.com/pyditn2/Pyditns-Dice-Thrower-Gamebuino.git
+[submodule "tools/chip-8-gamebuino"]
+	path = tools/chip-8-gamebuino
+	url = https://github.com/wuuff/chip-8-gamebuino.git
+[submodule "tools/Gamebuino-BEER-CALC"]
+	path = tools/Gamebuino-BEER-CALC
+	url = https://github.com/Awot83/Gamebuino-BEER-CALC.git
+[submodule "tools/HelloGamebuino"]
+	path = tools/HelloGamebuino
+	url = https://github.com/SloeComputers/HelloGamebuino.git
+[submodule "tools/sd_map_test"]
+	path = tools/sd_map_test
+	url = https://github.com/wuuff/sd_map_test.git
+[submodule "tools/Gamebuino-Thunderbolt_Calc"]
+	path = tools/Gamebuino-Thunderbolt_Calc
+	url = https://github.com/Awot83/Gamebuino-Thunderbolt_Calc.git
+[submodule "tools/Gamebuino-HIRAGANA-Japanese-Learning-tool"]
+	path = tools/Gamebuino-HIRAGANA-Japanese-Learning-tool
+	url = https://github.com/Awot83/Gamebuino-HIRAGANA-Japanese-Learning-tool.git
+[submodule "tools/Gamebuino-MusicNote"]
+	path = tools/Gamebuino-MusicNote
+	url = https://github.com/Awot83/Gamebuino-MusicNote.git
+[submodule "games/minesw-gameguino"]
+	path = games/minesw-gameguino
+	url = https://github.com/Tnxec2/minesw-gameguino.git
+[submodule "games/gamebuino-community-rpg"]
+	path = games/gamebuino-community-rpg
+	url = https://github.com/Sorunome/gamebuino-community-rpg.git
+[submodule "games/xonix-gamebuino"]
+	path = games/xonix-gamebuino
+	url = https://github.com/Tnxec2/xonix-gamebuino.git
+[submodule "games/gemgem-gamebuino"]
+	path = games/gemgem-gamebuino
+	url = https://github.com/Tnxec2/gemgem-gamebuino.git
+[submodule "games/DarkTower"]
+	path = games/DarkTower
+	url = https://github.com/marcushutchings/DarkTower.git
+[submodule "games/another2048"]
+	path = games/another2048
+	url = https://github.com/grafMakulaDer2te/another2048.git
