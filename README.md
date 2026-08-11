@@ -71,7 +71,7 @@ real source code could actually be found and archived.
 |---|---|---|---|
 | 101 Starships | Zoglu | None specified | [games/101Starships](games/101Starships) (Manual download - zoglu.net) |
 | A to K | Carlos Mari | CC-BY 4.0 (+ a non-standard no-selling note) | [games/A2K](games/A2K) (Manual download - carloslabs.com, later 404'd) |
-| Agaruino | ogbaba | GPLv3 | [games/Agaruino](https://github.com/ogbaba/Agaruino) (Submodule) |
+| Agaruino | ogbaba | GPLv3 | [games/Agaruino](https://github.com/ogbaba/Agaruino) (Submodule - an agar.io-style clone; also independently found via a later broader author/repo search, not just the wiki) |
 | armageddon | wuuff | GPLv3 | [games/armageddon](https://github.com/wuuff/armageddon) (Submodule) |
 | Artillery | Frakasss | None specified | [games/Artillery](https://github.com/Frakasss/Artillery) (Submodule) |
 | Asterocks | Yoda Zhang | None specified | [games/yoda-asterocks](games/yoda-asterocks) (Manual download - yodasvideoarcade.com bundle) |
@@ -137,7 +137,7 @@ real source code could actually be found and archived.
 | World's Hardest Game | Sorunome | None specified | [games/Worlds-Hardest-Game-Gamebuino](https://github.com/Sorunome/Worlds-Hardest-Game-Gamebuino) (Submodule) |
 | ZombiEscape | Frakasss | None specified | [games/ZombiEscape](https://github.com/Frakasss/ZombiEscape) (Submodule) |
 
-**64 real wiki-listed games found and archived**, out of ~75 known
+**67 real wiki-listed games found and archived**, out of ~75 known
 entries — see "Games we have not found source code for" below for the
 rest.
 
@@ -177,7 +177,6 @@ when it matched that instead:
 
 | Game | Author | License | Source |
 |---|---|---|---|
-| Agaruino | ogbaba | GPLv3 | [games/Agaruino](https://github.com/ogbaba/Agaruino) (Submodule - an agar.io-style clone; also has a real, now-dead wiki listing of its own, both search passes independently found it) |
 | Aimbuino | Baptiste Pouget (hosted under ogbaba's account) | GPLv3 | [games/Aimbuino](https://github.com/ogbaba/Aimbuino) (Submodule - "Bsktuino", an aiming/basketball game; a real 2016 school project, "ISN Project 2016, Lorgues", per its own README - explains the shared hosting) |
 | another2048 | grafMakulaDer2te | None specified | [games/another2048](https://github.com/grafMakulaDer2te/another2048) (Submodule - a genuinely different 2048 codebase from the already-archived `Gamebuino2048`; the repo also carries a separate `meta_version` branch for the unrelated META board — the default `main` branch archived here is the real Classic one; found via the live `gamebuino.com/creations` site) |
 | Community RPG | Sorunome | None specified | [games/gamebuino-community-rpg](https://github.com/Sorunome/gamebuino-community-rpg) (Submodule - a genuinely substantial class-based RPG with real EEPROM + SD-card save data; found via an author/repo sweep) |
@@ -186,6 +185,7 @@ when it matched that instead:
 | Dark Tower | Marcus Hutchings | GPLv3 | [games/DarkTower](https://github.com/marcushutchings/DarkTower) (Submodule - a real text-based adventure game, found via the live `gamebuino.com/creations` site rather than the old wiki or GitHub search) |
 | Duel | Clement83 | None specified | [games/Duel](https://github.com/Clement83/Duel) (Submodule - a sword-duel game with genuine two-cartridge `Wire.h` master/slave multiplayer) |
 | Elventure | wuuff | GPLv3 | [games/Elventure](https://github.com/wuuff/elventure-gamebuino) (Submodule - a real, class-based Zelda-like dungeon crawler) |
+| Fifteen | Tnxec2 | None specified | [games/fifteen](https://github.com/Tnxec2/fifteen) (Submodule - a classic sliding 15-puzzle with real EEPROM save; a genuinely different codebase from the already-archived Taquin, same concept, different author; found by checking this author's own full repo list directly rather than trusting a paginated listing view, which had been silently dropping entries) |
 | Firemen | Vicking69 | GPLv2 | [games/firemen](https://github.com/Vicking69/firemen) (Submodule) |
 | Footlol | Baptiste Pouget (hosted under ogbaba's account) | GPLv3 | [games/FOOTLOL-Gamebuino](https://github.com/ogbaba/FOOTLOL-Gamebuino) (Submodule - a small football game) |
 | Frogger (MAKERbuino port) | Andy Jackson | None specified | [games/Frogger_MAKERbuino](games/Frogger_MAKERbuino) (Manual extraction - one real subfolder of `andyhighnumber/Attiny-Arduino-Games`, a live but mostly-unrelated ATtiny85 compilation repo; extracted as plain files rather than submoduled whole, same treatment as `BigBlackBox`'s own compilation-repo source) |
@@ -207,14 +207,13 @@ when it matched that instead:
 | Ralph | Clement83 | None specified | [games/Ralph](https://github.com/Clement83/ralph) (Submodule - a Wreck-It-Ralph-themed platformer) |
 | Robot | Frakasss | None specified | [games/Robot](https://github.com/Frakasss/Robot) (Submodule - a real shooting/action game) |
 | Save Princesse | Clement83 | None specified | [games/SavePrincesse](https://github.com/Clement83/SavePrincesse) (Submodule - a tiny knight-vs-monster teaching game) |
-| Skibuino | Mike Del Pozzo | GPLv3 | [games/skibuino](https://github.com/delpozzo/skibuino) (Submodule) |
 | Snake Classic | Ripper121 (original), Tnxec2 (fork) | None specified | [games/snake-gamebuino-classic](https://github.com/Tnxec2/snake-gamebuino-classic) (Submodule - confirmed via source diff to be a direct fork of Ripper121's own, otherwise-unrecoverable, wiki-listed Snake) |
 | Star Honor | wuuff (a port of Wenceslao Villanueva Jr's original Arduboy game) | MIT | [games/StarHonor](https://github.com/wuuff/StarHonor-gamebuino) (Submodule - a roguelike space adventure with a real EEPROM save) |
+| Tetrino (Tnxec2's fork) | j0ff (original), Tnxec2 (fork) | None specified | [games/Tnxec2-tetrino](https://github.com/Tnxec2/tetrino) (Submodule - a real, confirmed fork of the already-archived `j0ff/tetrino`: same `.ino` source but a genuinely different `gb_platform.cpp` swapping the B/C button mapping, plus its own `.INF` SD-card icon the original never shipped; found by checking this author's own full repo list, per the same discipline as the Fifteen entry above) |
 | Under the Tower | wuuff | GPLv3 | [games/UnderTheTower](https://github.com/wuuff/under-the-tower) (Submodule - a real turn-based RPG across 10 randomized dungeons) |
-| Video Poker | Mike Del Pozzo | GPLv3 | [games/videopoker-gamebuino](https://github.com/delpozzo/videopoker-gamebuino) (Submodule) |
 | Xonix | Tnxec2 | None specified | [games/xonix-gamebuino](https://github.com/Tnxec2/xonix-gamebuino) (Submodule - a real Xonix clone; found via an author/repo sweep) |
 
-**36 games found this way**, on top of the 64 real wiki-listed ones
+**35 games found this way**, on top of the 67 real wiki-listed ones
 above.
 
 ## Games we have not found source code for

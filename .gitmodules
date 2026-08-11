@@ -274,3 +274,9 @@
 [submodule "games/another2048"]
 	path = games/another2048
 	url = https://github.com/grafMakulaDer2te/another2048.git
+[submodule "games/fifteen"]
+	path = games/fifteen
+	url = https://github.com/Tnxec2/fifteen.git
+[submodule "games/Tnxec2-tetrino"]
+	path = games/Tnxec2-tetrino
+	url = https://github.com/Tnxec2/tetrino.git

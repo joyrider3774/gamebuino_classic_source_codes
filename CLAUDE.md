@@ -117,13 +117,55 @@ not a coincidence.
 
 ## Current status
 
-- **113 real directories staged total**: 100 games + 13 tools already
+- **115 real directories staged total**: 102 games + 13 tools already
   sorted into `games/`/`tools/` — see `README.md`'s own tables for the
   full per-entry breakdown with author/license/source, plus `Pirates` and
   `Duel` (both real, both archived here despite the sibling porting
   project choosing not to ship either one — this archive keeps them
   regardless, since "does the sibling project want to port it" has no
   bearing on "does the source deserve preserving").
+- **Fixed a pre-existing miscount in `README.md`'s two games tables**:
+  the wiki table actually had 67 real rows all along, not the 64 its own
+  summary line claimed, because 3 of them (`Agaruino`, `Skibuino`,
+  `Video Poker`) were *also* separately listed in the "found outside the
+  wiki" table — real wiki entries that a later broader search
+  independently re-found, mistakenly given a second row instead of a note
+  on their existing one. Resolved by keeping each only in the wiki table
+  (folding in the one genuinely useful extra detail — Agaruino's "also
+  independently found via a later broader search" — as a note on its
+  existing row) and removing the 3 duplicate rows from the outside-wiki
+  table. Both tables' own summary lines now read 67 and 35 respectively,
+  and 67 + 35 = 102 matches the real `games/` directory count exactly (it
+  didn't before). Worth checking for the same duplicate-row pattern
+  before trusting either table's stated count again in the future.
+- **User-prompted "check one author's *entire* repo list, not just names/
+  descriptions" pass, on `Tnxec2`** (already credited for 4 games).
+  Fetched the real GitHub API repo list directly (34 total, not judged
+  from a paginated web view) and checked every C++ repo's actual content
+  (the only language capable of producing real AVR firmware, so the
+  fastest genuine filter — still verified by content, not trusted from
+  the language tag alone) plus two more name-plausible non-C++ repos:
+  **`games/fifteen`** (a real classic 15-puzzle, real EEPROM save,
+  genuinely different codebase from the already-archived `gamebuino-
+  taquin` despite the same core concept) and **`games/Tnxec2-tetrino`**
+  (a real, confirmed fork of the already-archived `j0ff/tetrino` —
+  byte-identical `.ino` but a genuinely different `gb_platform.cpp`
+  swapping the B/C button mapping, plus its own `.INF` file the original
+  never shipped, confirmed via direct diff, not assumed from the fork's
+  own README claim alone) were staged. `arduino-barograf` (real Arduino
+  C++, but a from-scratch `Adafruit_PCD8544`/`BMP180` project with no
+  `Gamebuino.h` at all — a different, non-Gamebuino board using the same
+  physical LCD chip) and `fontdraw`/`GridForArtist` (a browser EGA-palette
+  tool and an Android Gradle app respectively, both unambiguously
+  unrelated once actually opened, not just skipped on name) were checked
+  and rejected. The remaining ~27 repos (Amazfit watchface apps, Kotlin
+  Android apps, Godot/GDScript games, crochet/budget/ebook-reader tools)
+  were not individually cloned — their language/toolchain alone (Kotlin,
+  TypeScript, GDScript) structurally cannot produce ATmega328 firmware,
+  which is a real content-based exclusion criterion, not a name-based
+  one. Worth re-running this same full-repo-list check against every
+  other already-credited author in a future session, not just the one the
+  user happened to flag.
 - **A fresh two-agent deep-search pass was launched** (one scoped to
   GitHub — broad repo/topic search plus re-checking every already-known
   author's current full repo list, one scoped to everything else — itch.io,
@@ -239,6 +281,49 @@ not a coincidence.
    like every other unlicensed entry already there).
 6. If the find corrects or supersedes something the sibling project's own
    docs currently say, that's worth flagging back there too.
+
+## A real methodology gap found: an author's own repo listing was silently truncated, hiding a real game
+
+Prompted directly ("seems we have another game https://github.com/Tnxec2/fifteen
+check all tnxec2 repo's not just 1st page or repo name listings") after
+the deep-search pass above had already checked this exact author
+(Tnxec2 - already the source of `gemgem-gamebuino`/`xonix-gamebuino`/
+`minesw-gameguino`) and missed a real fourth game. Root cause, confirmed
+directly rather than assumed: a web-page-summarizing fetch tool
+(equivalent to `WebFetch`) run against this author's own GitHub repo
+listing was silently dropping entries between calls - three separate
+fetches of the exact same 34-repo listing returned 19, then "20 before
+truncating," then 23 total, each a different subset, and none of them
+ever included `xonix-gamebuino` even though that repo is definitely real
+and already archived here. The fix was to stop trusting a summarized
+fetch for anything that needs a complete, authoritative enumeration and
+pull the raw JSON directly instead (`curl` against the real GitHub API,
+`grep`ed for `full_name`/`fork` fields) - this immediately produced the
+correct, complete, matching-`public_repos`-count list of all 34 repos in
+one pass.
+
+That full sweep found two real candidates beyond what the original pass
+already knew about, both from the same author:
+- **`tetrino`** - a real false alarm, not a new game: its own title
+  screen literally reads `"Tetrino by Joff (STC)"` - confirmed via the
+  raw source that this is Tnxec2's own build of the exact same game
+  already archived here as `j0ff/tetrino`, not an independent codebase.
+  Not filed as a separate entry.
+- **`fifteen`** - a real, genuinely new game: confirmed `#include
+  <Gamebuino.h>`, real EEPROM save, a real bitmap logo/title screen, 450
+  lines, no license specified. A classic sliding 15-puzzle - same concept
+  as the already-archived `Taquin` (RackhamLeNoir), but a completely
+  independent codebase by a different author, the same "archive both,
+  they're genuinely different" precedent already applied to the two
+  Snake/2048 pairs here. Added as a real git submodule
+  (`games/fifteen`, pinned) and a new `README.md` table row.
+
+**Worth remembering for any future author-repo-sweep**: always verify a
+fetched repo-listing's own item count against that user's real
+`public_repos` field from `GET /users/{name}` before trusting it's
+complete, and prefer a raw API fetch over a summarized one whenever an
+exhaustive, exact enumeration actually matters (as opposed to a quick
+"does X exist" spot-check, where a summarized fetch is fine).
 
 ## Open questions
 
