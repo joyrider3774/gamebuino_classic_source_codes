@@ -280,3 +280,18 @@
 [submodule "games/Tnxec2-tetrino"]
 	path = games/Tnxec2-tetrino
 	url = https://github.com/Tnxec2/tetrino.git
+[submodule "games/mole-control"]
+	path = games/mole-control
+	url = https://github.com/grafMakulaDer2te/mole-control.git
+[submodule "tools/ghost"]
+	path = tools/ghost
+	url = https://github.com/Clement83/ghost.git
+[submodule "tools/Gamebuino-Drawer"]
+	path = tools/Gamebuino-Drawer
+	url = https://github.com/qubist/Gamebuino-Drawer.git
+[submodule "tools/Radio"]
+	path = tools/Radio
+	url = https://github.com/scmar/Radio.git
+[submodule "games/Strike-Down"]
+	path = games/Strike-Down
+	url = https://github.com/SkylarHylar/Strike-Down.git

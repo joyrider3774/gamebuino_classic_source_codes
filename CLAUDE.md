@@ -117,13 +117,56 @@ not a coincidence.
 
 ## Current status
 
-- **115 real directories staged total**: 102 games + 13 tools already
+- **120 real directories staged total**: 104 games + 16 tools already
   sorted into `games/`/`tools/` — see `README.md`'s own tables for the
   full per-entry breakdown with author/license/source, plus `Pirates` and
   `Duel` (both real, both archived here despite the sibling porting
   project choosing not to ship either one — this archive keeps them
   regardless, since "does the sibling project want to port it" has no
   bearing on "does the source deserve preserving").
+- **User-prompted "full unpaginated repo list" sweep extended to every
+  already-credited author** (not just `Tnxec2`), via two more parallel
+  agents split A–L / M–Z. **A–L agent's results are in, independently
+  re-verified, and filed**: `games/mole-control` (Markus Klingler /
+  grafMakulaDer2te — a real, complete Whack-a-Mole game) and `tools/ghost`
+  (Clement83 — a real "ghost detector" ambient-light-sensor novelty
+  gadget, filed as a tool/demo rather than a game since it has no
+  win/lose state, matching `sd_map_test`'s own precedent). **One claimed
+  find was checked and rejected**: the agent's report presented `Snipong`
+  (ogbaba, née baptistepouget) as a real complete game, but opening the
+  actual `.ino` directly showed `void loop() { if(gb.update()){ } }` —
+  a genuinely empty body, no gameplay of any kind. This exact repo was
+  already flagged as an empty stub in the sibling project's own
+  `DISCOVERED_GAMES.md` from a prior pass; the agent's report
+  contradicted that without having actually opened the file to check —
+  a real, concrete instance of why every agent claim gets independently
+  re-verified before filing, not trusted from the report's own
+  description/README quote alone. **M–Z agent's results are in and
+  filed**: `tools/Gamebuino-Drawer` (qubist — a real, functional pixel-art
+  drawing tool, only Save/Export left as `//FIXME` stubs), `tools/Radio`
+  (scmar — a real FM radio receiver app using an RDA5807 chip, MIT), and
+  `games/Strike-Down` (Skyrunner65, whose GitHub account was later renamed
+  to SkylarHylar — confirmed via redirect, not a different person; "Aerial
+  Assault", a real Joust clone). All three independently re-verified
+  (`git ls-remote` matching the agent's own quoted commit hashes exactly,
+  `#include <Gamebuino.h>` grep, non-stub `loop()` bodies read directly,
+  license files read directly). **`GB_Fat` (Sorunome) was explicitly
+  rejected by the user** despite being real, non-stub, in-scope source —
+  it's a FAT-filesystem/SD-card *library* (a dependency other games like
+  `gamebuino-community-rpg` link against), not a standalone game or tool
+  in its own right, so it doesn't get its own archive entry; the user had
+  to say this twice because the still-running background agent kept
+  re-cloning it into `unsorted/` after each removal — a real hazard of
+  manually curating a directory a background agent is still actively
+  writing to, worth remembering for next time (better to wait for an
+  agent to fully finish before doing spot-removals in its scratch space).
+  This agent also flagged, without staging as a new find since it's
+  already archived: `smogheap` (bub's author) has moved active
+  development to `gitlab.com/smogheap/bub`, which now carries real
+  substantial source the original dead GitHub repo never had — noted on
+  `bub`'s own README.md row rather than switched to a submodule, since the
+  plain files already here were independently recovered and verified
+  their own way.
 - **Fixed a pre-existing miscount in `README.md`'s two games tables**:
   the wiki table actually had 67 real rows all along, not the 64 its own
   summary line claimed, because 3 of them (`Agaruino`, `Skibuino`,

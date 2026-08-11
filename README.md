@@ -50,10 +50,17 @@ only place the content still exists).
 
 One entry (`bub`) is a special case worth flagging explicitly, since a
 naive submodule-everything pass would have gotten it wrong: its
-originally-listed repository really did exist, but contained nothing but
-a `README.md` and no real source at all. The real source was recovered
-separately (a direct `.zip` from the author's own site) and is stored
-here as plain committed files, not a submodule of the empty repo.
+originally-listed GitHub repository really did exist, but contained
+nothing but a `README.md` and no real source at all. The real source was
+recovered separately (a direct `.zip` from the author's own site) and is
+stored here as plain committed files, not a submodule of the empty repo.
+(The author has since moved active development to
+[gitlab.com/smogheap/bub](https://gitlab.com/smogheap/bub), which does
+now carry real, substantial source of its own — found during a later
+author-repo sweep. Not switched to a submodule of that GitLab repo since
+the plain files already archived here were independently recovered and
+verified; noted here in case a future session wants to reconcile the two
+or track that GitLab repo's own further development.)
 
 `games/Gamebuino-Classic/` is the *official Gamebuino Classic library
 itself* (not a game) — archived here too since it's the actual API every
@@ -155,13 +162,16 @@ in [`tools/`](tools/), not `games/`:
 | GambiPaint | Trist06Git | None specified | [tools/GambiPaint](https://github.com/Trist06Git/GambiPaint) (Submodule - a drawing/paint tool) |
 | Gamebuino BEER-CALC | Awot83 | GPLv3 | [tools/Gamebuino-BEER-CALC](https://github.com/Awot83/Gamebuino-BEER-CALC) (Submodule - a beer-brewing calculator; not on the wiki, found via an author/repo sweep) |
 | Gamebuino Classic Games Compilation | Gamebuino (official) | GPLv3 | [tools/Gamebuino-Classic-Games-Compilation](https://github.com/Gamebuino/Gamebuino-Classic-Games-Compilation) (Submodule - the official SD-card compilation; ships only compiled `.HEX`/`.INF` files, no real source of its own) |
+| Gamebuino Drawer | qubist | None specified | [tools/Gamebuino-Drawer](https://github.com/qubist/Gamebuino-Drawer) (Submodule - a real, functional pixel-art drawing tool with a menu system; only Save/Export are unfinished `//FIXME` stubs, the core drawing loop works; found via a full author-repo-list sweep) |
 | Gamebuino HIRAGANA Japanese Learning tool | Awot83 | GPLv3 | [tools/Gamebuino-HIRAGANA-Japanese-Learning-tool](https://github.com/Awot83/Gamebuino-HIRAGANA-Japanese-Learning-tool) (Submodule - a Japanese hiragana-reading learning tool; not on the wiki, found via an author/repo sweep) |
 | Gamebuino MusicNote | Awot83 | GPLv3 | [tools/Gamebuino-MusicNote](https://github.com/Awot83/Gamebuino-MusicNote) (Submodule - a music-note learning/ear-training tool; not on the wiki, found via an author/repo sweep) |
 | Gamebuino Thunderbolt Calc | Awot83 | GPLv3 | [tools/Gamebuino-Thunderbolt_Calc](https://github.com/Awot83/Gamebuino-Thunderbolt_Calc) (Submodule - a lightning-strike-distance calculator; not on the wiki, found via an author/repo sweep) |
 | gamebuinoEducation | CalebDueck | Custom "Educational Use License" — **non-commercial use only**, redistribution/mirroring restricted, not a standard OSS license (read the repo's own `LICENSE.md` before reusing anything) | [tools/gamebuinoEducation](https://github.com/CalebDueck/gamebuinoEducation) (Submodule - a genuinely substantial 13-lesson Gamebuino Classic programming course with real working starter/example code per lesson; not on the wiki, found via an author/repo sweep) |
+| ghost | Clement83 | None specified | [tools/ghost](https://github.com/Clement83/ghost) (Submodule - a "ghost detector" novelty gadget using the real ambient-light sensor as a dowsing-needle gauge; a real, complete, non-stub demo, not a game with a win/lose state; found via a full author-repo-list sweep) |
 | HelloGamebuino | SloeComputers (originally AnotherJohnH) | Unlicense | [tools/HelloGamebuino](https://github.com/SloeComputers/HelloGamebuino) (Submodule - a CMake/Makefile-based dev environment for building real Gamebuino Classic `.HEX` binaries from the command line, without the Arduino IDE; not on the wiki, found via a fresh topic search) |
 | Metalog | ogbaba | GPLv3 | [tools/Metalog](https://github.com/ogbaba/Metalog) (Submodule - a logic-circuit simulator) |
 | Pyditn's Dice Thrower | pyditn2 | None specified | [tools/Pyditns-Dice-Thrower-Gamebuino](https://github.com/pyditn2/Pyditns-Dice-Thrower-Gamebuino) (Submodule - a real dice-rolling utility; not on the wiki, found via an author/repo sweep) |
+| Radio | scmar | MIT | [tools/Radio](https://github.com/scmar/Radio) (Submodule - a real FM radio receiver app using an RDA5807 chip, with RDS support; found via a full author-repo-list sweep) |
 | sd_map_test | wuuff | None specified | [tools/sd_map_test](https://github.com/wuuff/sd_map_test) (Submodule - an interactive SD-card-streamed scrolling-map tech demo, not a game in its own right; not on the wiki, found via an author/repo sweep) |
 | yoda-fxsynth | Yoda Zhang | None specified | [tools/yoda-fxsynth](tools/yoda-fxsynth) (Manual download - a sound-effect synth/editor tool, not a game) |
 
@@ -194,6 +204,7 @@ when it matched that instead:
 | Gemgem | Tnxec2 | None specified | [games/gemgem-gamebuino](https://github.com/Tnxec2/gemgem-gamebuino) (Submodule - a Bejeweled-style match-3 game with real EEPROM save/pause; found via an author/repo sweep) |
 | Master Kebab | ogbaba | GPLv3 | [games/MasterKebab](https://github.com/ogbaba/RMKebab) (Submodule - a kebab-shop management game with a real EEPROM save; the author's own README warns "this game may not work on emulators") |
 | Minesweeper (Tnxec2's fork) | Tnxec2 | None specified | [games/minesw-gameguino](https://github.com/Tnxec2/minesw-gameguino) (Submodule - a real, confirmed fork of the already-archived `dirksteindorf/Gamebuino-Minesweeper` with its own gameplay changes: maximized board size, a medium difficulty, restart-on-loss; a genuinely different codebase state, not a duplicate; found via an author/repo sweep) |
+| Mole Control | Markus Klingler (grafMakulaDer2te) | None specified | [games/mole-control](https://github.com/grafMakulaDer2te/mole-control) (Submodule - a real, complete Whack-a-Mole game with scoring, levels, and lives; found via a full author-repo-list sweep) |
 | MotoCross | Clement83 | None specified | [games/MotoCross](https://github.com/Clement83/motoCross) (Submodule - a racing game) |
 | My RPG | Frakasss | None specified | [games/MyRPG](https://github.com/Frakasss/MyRPG) (Submodule - a small RPG) |
 | No Name Platform Game | Frakasss | None specified | [games/NoNamePlatformGame](https://github.com/Frakasss/NoNamePlatformGame) (Submodule - a real platformer despite the placeholder-looking name) |
@@ -209,11 +220,12 @@ when it matched that instead:
 | Save Princesse | Clement83 | None specified | [games/SavePrincesse](https://github.com/Clement83/SavePrincesse) (Submodule - a tiny knight-vs-monster teaching game) |
 | Snake Classic | Ripper121 (original), Tnxec2 (fork) | None specified | [games/snake-gamebuino-classic](https://github.com/Tnxec2/snake-gamebuino-classic) (Submodule - confirmed via source diff to be a direct fork of Ripper121's own, otherwise-unrecoverable, wiki-listed Snake) |
 | Star Honor | wuuff (a port of Wenceslao Villanueva Jr's original Arduboy game) | MIT | [games/StarHonor](https://github.com/wuuff/StarHonor-gamebuino) (Submodule - a roguelike space adventure with a real EEPROM save) |
+| Strike-Down | Skyrunner65 (renamed to SkylarHylar) | None specified | [games/Strike-Down](https://github.com/SkylarHylar/Strike-Down) (Submodule - "Aerial-Assault", a real Joust clone; same author already credited for Smash-and-Crash, whose GitHub account was later renamed - confirmed via redirect, not a different person; found via a full author-repo-list sweep) |
 | Tetrino (Tnxec2's fork) | j0ff (original), Tnxec2 (fork) | None specified | [games/Tnxec2-tetrino](https://github.com/Tnxec2/tetrino) (Submodule - a real, confirmed fork of the already-archived `j0ff/tetrino`: same `.ino` source but a genuinely different `gb_platform.cpp` swapping the B/C button mapping, plus its own `.INF` SD-card icon the original never shipped; found by checking this author's own full repo list, per the same discipline as the Fifteen entry above) |
 | Under the Tower | wuuff | GPLv3 | [games/UnderTheTower](https://github.com/wuuff/under-the-tower) (Submodule - a real turn-based RPG across 10 randomized dungeons) |
 | Xonix | Tnxec2 | None specified | [games/xonix-gamebuino](https://github.com/Tnxec2/xonix-gamebuino) (Submodule - a real Xonix clone; found via an author/repo sweep) |
 
-**35 games found this way**, on top of the 67 real wiki-listed ones
+**37 games found this way**, on top of the 67 real wiki-listed ones
 above.
 
 ## Games we have not found source code for
