@@ -247,6 +247,7 @@ still-running mirror this project's own search tooling didn't find.
 | Stack Challenge | BlackDragon | Resolves to a `copy.com` cloud-storage link — that service shut down in 2016 |
 | Shot Zero | Linky439 | Original host dead; the one alternate forum mirror's raw HTML (both of its only two Wayback Machine snapshots, plus the live page) all confirm the download link was never actually present, not merely mis-rendered; the wiki's own original shortlink is dead with zero Wayback coverage; the author's later itch.io work never re-released it — every remaining lever now checked, not just re-confirmed |
 | Mandeluino *(not a game — a Mandelbrot-set viewer)* | svenofnine | A real copy was recovered (user-supplied `.7z`), but it contains only a compiled `mandelbuino.hex`/`mandelbuino.INF`, no real source — removed from `tools/` on that basis rather than kept as a binary-only entry |
+| copter (a helicopter-game port, distinct from the already-archived `games/Copter`/"S-COPTER" by Clement83) | annyfm | Repo (`annyfm/Gamebuino-Copter`) returns a real 404; the author's GitHub account is still alive but has been entirely repurposed to unrelated live-coding/music repos, with nothing Gamebuino-shaped left to page through; zero Wayback Machine snapshots exist for the repo at any point in its history — a genuinely new gap found via a full re-read of the wiki's own complete entry list, not previously tracked in this table at all |
 
 ## License
 

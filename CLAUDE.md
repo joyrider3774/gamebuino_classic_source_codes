@@ -302,7 +302,21 @@ not a coincidence.
   mirror found at `e-magination.jeun.fr/t4958-shot-zero-gamebuino`, but
   its own "download link" heading never actually had a URL under it when
   last checked — worth a real manual look in a browser, not more
-  automated searching).
+  automated searching), and **`copter` by `annyfm`** (repo
+  `Gamebuino-Copter` returns a real 404, the author's GitHub account is
+  alive but entirely repurposed to unrelated live-coding/music repos,
+  zero Wayback snapshots exist for the repo ever). This last one is a
+  **genuinely new addition to this list** — found by the user pasting the
+  wiki's own complete, uncut entry HTML directly (rather than a partial
+  copy that had been silently truncating past ~50,000 characters in prior
+  turns) and asking for a full cross-check against every entry, not just
+  the tools originally asked about. It's a real, distinct game from the
+  already-archived `games/Copter` (Clement83, wiki-listed separately as
+  "S-COPTER") — same generic name, different author, different repo,
+  confirmed via source not assumed from the name. Worth remembering: a
+  truncated paste of a long reference list can silently hide real gaps:
+  cross-check completeness (row/entry counts) whenever a list this size
+  gets pasted in pieces, not just once from a full copy.
 
 ## Workflow for finding more sources
 
