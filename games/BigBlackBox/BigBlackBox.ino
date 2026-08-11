@@ -11,12 +11,8 @@
  * 
  */
 
-#include "lib_Backlight.h"
-#include "lib_Battery.h"
-#include "lib_Buttons.h"
-#include "lib_Display.h"
-#include "lib_Gamebuino.h"
-#include "lib_Sound.h"
+#include <Gamebuino.h>
+
 
 #define EEPROM_SAVE_START   16
 
